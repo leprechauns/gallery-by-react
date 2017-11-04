@@ -28,6 +28,7 @@ function getDefaultModules() {
         test: /\.css$/,
         loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}'
       },
+
       {
         test: /\.scss/,
         loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version", "firefox 15"]}!sass-loader?outputStyle=expanded'
@@ -41,7 +42,7 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!stylus-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
+        test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svgs)$/,
         loader: 'url-loader?limit=8192'
       },
       {

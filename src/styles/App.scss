@@ -1,4 +1,10 @@
 /* Base Application Styles */
+
+//@font-face {
+//  font-family: "icons-turn-arrow";
+//  src: url("../fonts/icons/turn-arrow.eot") format("embedded-opentype"), url("../fonts/icons/turn-arrow.woff") format("woff"), url("../fonts/icons/turn-arrow.ttf") format("truetype"), url("../fonts/icons/turn-arrow.svg") format("svg");
+//}
+
 html,body{
   width:100%;
   height:100%;
@@ -114,7 +120,7 @@ html,body{
       cursor: pointer;
       background-color: #aaa;
       border-radius: 50%;
-      transform: scale(.6);
+      transform: scale(.5);
       vertical-align: middle;
       transition: transform .6s ease-in-out;
       &.is-center {
@@ -122,7 +128,7 @@ html,body{
         transform: scale(1);
         &::after {
           color: #fff;
-          font-family: 'iconfont';
+          font-family: 'icons-turn-arrow';
           line-height: 30px;
           content: '\e600';
         }
